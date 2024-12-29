@@ -65,12 +65,12 @@ class DashboardView extends StatelessWidget {
           Card(
             child: InkWell(
               onTap: () {
-                context.read<DashboardCubit>().openStudentCubitView(context);
+                context.read<DashboardCubit>().openAreaCubitView(context);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
-                  Icon(Icons.person, size: 48),
+                  Icon(Icons.pie_chart, size: 48),
                   Text('Area of Circle'),
                 ],
               ),
@@ -79,12 +79,14 @@ class DashboardView extends StatelessWidget {
           Card(
             child: InkWell(
               onTap: () {
-                context.read<DashboardCubit>().openStudentCubitView(context);
+                context
+                    .read<DashboardCubit>()
+                    .openSimpleInterestCubitView(context);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
-                  Icon(Icons.person, size: 48),
+                  Icon(Icons.attach_money, size: 48),
                   Text('Simple Interest'),
                 ],
               ),
@@ -93,13 +95,13 @@ class DashboardView extends StatelessWidget {
           Card(
             child: InkWell(
               onTap: () {
-                context.read<DashboardCubit>().openStudentCubitView(context);
+                context.read<DashboardCubit>().openBMICubitView(context);
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
-                  Icon(Icons.person, size: 48),
-                  Text('Student Cubit'),
+                  Icon(Icons.fitness_center, size: 48),
+                  Text('BMI Calculator'),
                 ],
               ),
             ),

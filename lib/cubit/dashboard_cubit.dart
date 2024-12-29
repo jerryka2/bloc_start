@@ -66,7 +66,7 @@ class DashboardCubit extends Cubit<void> {
     );
   }
 
-  void openSimpleInterestCubit(BuildContext context) {
+  void openSimpleInterestCubitView(BuildContext context) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -78,7 +78,7 @@ class DashboardCubit extends Cubit<void> {
     );
   }
 
-  void openAreaCubit(BuildContext context) {
+  void openAreaCubitView(BuildContext context) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -90,7 +90,7 @@ class DashboardCubit extends Cubit<void> {
     );
   }
 
-  void openBMICubit(BuildContext context) {
+  void openBMICubitView(BuildContext context) {
     Navigator.push(
       context,
       MaterialPageRoute(
